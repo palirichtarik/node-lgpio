@@ -52,6 +52,7 @@
     "build:docs:generate": "api-documenter markdown -i .tmp -o docs",
     "build:docs": "run-s build:docs:extract build:docs:generate",
     "build": "run-s build:bindings build:ts build:docs",
-    "install": "npm run build:bindings"
+    "install": "npm run build:bindings",
+    "prepare": "npm run build"
   }
 }
