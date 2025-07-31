@@ -6,7 +6,7 @@
 
 This writes 16 bits of data to the specified register of the device and reads 16 bits of data in return.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cProcessCall(handle: number, i2cReg: number, wordVal: number): number;
@@ -14,13 +14,73 @@ export declare function i2cProcessCall(handle: number, i2cReg: number, wordVal: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  i2cReg | number | 0-0xFF, the register to read/write |
-|  wordVal | number | 0-0xFFFF, the value to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+i2cReg
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the register to read/write
+
+
+</td></tr>
+<tr><td>
+
+wordVal
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFFFF, the value to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

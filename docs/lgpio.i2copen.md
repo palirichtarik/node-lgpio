@@ -6,7 +6,7 @@
 
 This returns a handle for the device at the address on the I2C bus.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cOpen(i2cDev: number, i2cAddr: number, i2cFlags?: number): number;
@@ -14,13 +14,73 @@ export declare function i2cOpen(i2cDev: number, i2cAddr: number, i2cFlags?: numb
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  i2cDev | number | The I2C bus device ID |
-|  i2cAddr | number | The I2C device address |
-|  i2cFlags | number | <i>(Optional)</i> No flags are currently defined; this parameter should be omitted or set to zero |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+i2cDev
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C bus device ID
+
+
+</td></tr>
+<tr><td>
+
+i2cAddr
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device address
+
+
+</td></tr>
+<tr><td>
+
+i2cFlags
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ No flags are currently defined; this parameter should be omitted or set to zero
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

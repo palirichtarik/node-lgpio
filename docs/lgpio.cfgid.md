@@ -6,7 +6,7 @@
 
 Internal configuration option IDs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum CfgId 
@@ -14,10 +14,51 @@ export declare enum CfgId
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  DEBUG\_LEVEL | <code>0</code> |  |
-|  MIN\_DELAY | <code>1</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+DEBUG\_LEVEL
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+MIN\_DELAY
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

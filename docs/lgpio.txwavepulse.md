@@ -6,10 +6,10 @@
 
 An object representing a pulse in a wave sequence.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare type TxWavePulse = {
+export type TxWavePulse = {
     bits: bigint;
     mask: bigint;
     delay: number;

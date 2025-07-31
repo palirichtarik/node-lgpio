@@ -6,7 +6,7 @@
 
 Bitmask for configuring GPIO options.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum GpioFlag 
@@ -14,14 +14,107 @@ export declare enum GpioFlag
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  SET\_ACTIVE\_LOW | <code>4</code> |  |
-|  SET\_OPEN\_DRAIN | <code>8</code> |  |
-|  SET\_OPEN\_SOURCE | <code>16</code> |  |
-|  SET\_PULL\_UP | <code>32</code> |  |
-|  SET\_PULL\_DOWN | <code>64</code> |  |
-|  SET\_PULL\_NONE | <code>128</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+SET\_ACTIVE\_LOW
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+SET\_OPEN\_DRAIN
+
+
+</td><td>
+
+`8`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+SET\_OPEN\_SOURCE
+
+
+</td><td>
+
+`16`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+SET\_PULL\_UP
+
+
+</td><td>
+
+`32`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+SET\_PULL\_DOWN
+
+
+</td><td>
+
+`64`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+SET\_PULL\_NONE
+
+
+</td><td>
+
+`128`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

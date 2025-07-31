@@ -6,7 +6,7 @@
 
 This function returns a handle for the SPI device on the channel.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function spiOpen(spiDev: number, spiChan: number, spiBaud: number, spiFlags?: number): number;
@@ -14,14 +14,89 @@ export declare function spiOpen(spiDev: number, spiChan: number, spiBaud: number
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spiDev | number | The SPI device ID |
-|  spiChan | number | The SPI device channel |
-|  spiBaud | number | The SPI speed to set in bits per second |
-|  spiFlags | number | <i>(Optional)</i> See remarks |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spiDev
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The SPI device ID
+
+
+</td></tr>
+<tr><td>
+
+spiChan
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The SPI device channel
+
+
+</td></tr>
+<tr><td>
+
+spiBaud
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The SPI speed to set in bits per second
+
+
+</td></tr>
+<tr><td>
+
+spiFlags
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ See remarks
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

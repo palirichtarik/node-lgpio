@@ -6,7 +6,7 @@
 
 This function returns the count of bytes available to be read from the device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function serialDataAvailable(handle: number): number;
@@ -14,11 +14,41 @@ export declare function serialDataAvailable(handle: number): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

@@ -6,7 +6,7 @@
 
 Sets the library working directory.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function setWorkDir(dirPath: string): void;
@@ -14,11 +14,41 @@ export declare function setWorkDir(dirPath: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dirPath | string | The working directory path |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dirPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The working directory path
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

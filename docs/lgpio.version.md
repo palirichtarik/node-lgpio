@@ -6,12 +6,12 @@
 
 Returns the lgpiolibrary version number.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function version(): number;
 ```
-<b>Returns:</b>
+**Returns:**
 
 number
 

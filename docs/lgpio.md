@@ -6,98 +6,948 @@
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [CfgId](./lgpio.cfgid.md) | Internal configuration option IDs. |
-|  [GpioEdge](./lgpio.gpioedge.md) | Bitmask representing the edge on which an alert should trigger. |
-|  [GpioFlag](./lgpio.gpioflag.md) | Bitmask for configuring GPIO options. |
-|  [GpioLevel](./lgpio.gpiolevel.md) | The GPIO level at the time an alert was triggered. |
-|  [GpioLineMode](./lgpio.gpiolinemode.md) | Bitmask representing the GPIO line mode. |
-|  [GpioMode](./lgpio.gpiomode.md) | Bitmask representing the GPIO mode. |
-|  [TxKind](./lgpio.txkind.md) | Transmission queue kind. |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CfgId](./lgpio.cfgid.md)
+
+
+</td><td>
+
+Internal configuration option IDs.
+
+
+</td></tr>
+<tr><td>
+
+[GpioEdge](./lgpio.gpioedge.md)
+
+
+</td><td>
+
+Bitmask representing the edge on which an alert should trigger.
+
+
+</td></tr>
+<tr><td>
+
+[GpioFlag](./lgpio.gpioflag.md)
+
+
+</td><td>
+
+Bitmask for configuring GPIO options.
+
+
+</td></tr>
+<tr><td>
+
+[GpioLevel](./lgpio.gpiolevel.md)
+
+
+</td><td>
+
+The GPIO level at the time an alert was triggered.
+
+
+</td></tr>
+<tr><td>
+
+[GpioLineMode](./lgpio.gpiolinemode.md)
+
+
+</td><td>
+
+Bitmask representing the GPIO line mode.
+
+
+</td></tr>
+<tr><td>
+
+[GpioMode](./lgpio.gpiomode.md)
+
+
+</td><td>
+
+Bitmask representing the GPIO mode.
+
+
+</td></tr>
+<tr><td>
+
+[TxKind](./lgpio.txkind.md)
+
+
+</td><td>
+
+Transmission queue kind.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [errorText(error)](./lgpio.errortext.md) | Returns the error text for an error code. |
-|  [getInternal(cfgId)](./lgpio.getinternal.md) | Get an internal configuration value. |
-|  [getWorkDir()](./lgpio.getworkdir.md) | Returns the library working directory. |
-|  [gpiochipClose(handle)](./lgpio.gpiochipclose.md) | This closes an opened gpiochip device. |
-|  [gpiochipOpen(gpioDev)](./lgpio.gpiochipopen.md) | This returns a handle to a gpiochip device. |
-|  [gpioClaimAlert(handle, flags, edges, gpio, nfyHandle)](./lgpio.gpioclaimalert.md) | This claims a GPIO for alerts on level changes. |
-|  [gpioClaimInput(handle, gpio, flags)](./lgpio.gpioclaiminput.md) | This claims a GPIO for input. |
-|  [gpioClaimOutput(handle, gpio, flags, level)](./lgpio.gpioclaimoutput.md) | This claims a GPIO for output. |
-|  [gpioFree(handle, gpio)](./lgpio.gpiofree.md) | This frees a GPIO. |
-|  [gpioGetChipInfo(handle)](./lgpio.gpiogetchipinfo.md) | This returns information about a gpiochip. |
-|  [gpioGetLineInfo(handle, gpio)](./lgpio.gpiogetlineinfo.md) | Returns information about a GPIO. |
-|  [gpioGetMode(handle, gpio)](./lgpio.gpiogetmode.md) | Returns the GPIO mode. |
-|  [gpioRead(handle, gpio)](./lgpio.gpioread.md) | This returns the level of a GPIO. |
-|  [gpioSetAlertsFunc(handle, gpio, callback)](./lgpio.gpiosetalertsfunc.md) | This sets up a callback to be called when an alert GPIO changes state. |
-|  [gpioSetDebounce(handle, gpio, debounceUs)](./lgpio.gpiosetdebounce.md) | This sets the debounce time for a GPIO. |
-|  [gpioSetSamplesFunc(callback)](./lgpio.gpiosetsamplesfunc.md) | This sets up a callback to be called when any alert GPIO changes state. |
-|  [gpioSetUser(handle, user)](./lgpio.gpiosetuser.md) | This sets the user string to be associated with each claimed GPIO. |
-|  [gpioSetWatchdog(handle, gpio, watchdogUs)](./lgpio.gpiosetwatchdog.md) | This sets the watchdog time for a GPIO. |
-|  [gpioWrite(handle, gpio, level)](./lgpio.gpiowrite.md) | This sets the level of an output GPIO. |
-|  [groupClaimInput(handle, gpios, flags)](./lgpio.groupclaiminput.md) | This claims a group of GPIO for inputs. |
-|  [groupClaimOutput(handle, gpios, levels, flags)](./lgpio.groupclaimoutput.md) | This claims a group of GPIO for outputs. |
-|  [groupFree(handle, gpio)](./lgpio.groupfree.md) | This frees all the GPIO associated with a group. |
-|  [groupRead(handle, gpio)](./lgpio.groupread.md) | This returns the levels read from a group. |
-|  [groupWrite(handle, gpio, levels, mask)](./lgpio.groupwrite.md) | This sets the levels of an output group. |
-|  [i2cBlockProcessCall(handle, i2cReg, ioBuf, count)](./lgpio.i2cblockprocesscall.md) | This writes data bytes to the specified register of the device and reads a device specified number of bytes of data in return. |
-|  [i2cClose(handle)](./lgpio.i2cclose.md) | This closes the I2C device. |
-|  [i2cOpen(i2cDev, i2cAddr, i2cFlags)](./lgpio.i2copen.md) | This returns a handle for the device at the address on the I2C bus. |
-|  [i2cProcessCall(handle, i2cReg, wordVal)](./lgpio.i2cprocesscall.md) | This writes 16 bits of data to the specified register of the device and reads 16 bits of data in return. |
-|  [i2cReadBlockData(handle, i2cReg, rxBuf)](./lgpio.i2creadblockdata.md) | This reads up to 32 bytes from the specified register of the device. |
-|  [i2cReadByte(handle)](./lgpio.i2creadbyte.md) | This reads a single byte from the device. |
-|  [i2cReadByteData(handle, i2cReg)](./lgpio.i2creadbytedata.md) | This reads a single byte from the specified register of the device. |
-|  [i2cReadDevice(handle, rxBuf)](./lgpio.i2creaddevice.md) | This reads count bytes from the raw device. |
-|  [i2cReadI2CBlockData(handle, i2cReg, rxBuf)](./lgpio.i2creadi2cblockdata.md) | This reads <code>rxBuf.length</code> bytes from the specified register of the device. The count may be 1-32. |
-|  [i2cReadWordData(handle, i2cReg)](./lgpio.i2creadworddata.md) | This reads a single 16-bit word from the specified register of the device. |
-|  [i2cSegments(handle, segs)](./lgpio.i2csegments.md) | This function executes multiple I2C segments in one transaction by calling the <code>I2C_RDWR</code> ioctl. |
-|  [i2cWriteBlockData(handle, i2cReg, data)](./lgpio.i2cwriteblockdata.md) | This writes up to 32 bytes to the specified register of the device. |
-|  [i2cWriteByte(handle, byteVal)](./lgpio.i2cwritebyte.md) | This sends a single byte to the device. |
-|  [i2cWriteByteData(handle, i2cReg, byteVal)](./lgpio.i2cwritebytedata.md) | This writes a single byte to the specified register of the device. |
-|  [i2cWriteDevice(handle, data)](./lgpio.i2cwritedevice.md) | This writes a buffer of bytes to the raw device. |
-|  [i2cWriteI2CBlockData(handle, i2cReg, data)](./lgpio.i2cwritei2cblockdata.md) | This writes up to 32 bytes to the specified register of the device. |
-|  [i2cWriteQuick(handle, bitVal)](./lgpio.i2cwritequick.md) | This sends a single bit (in the Rd/Wr bit) to the device. |
-|  [i2cWriteWordData(handle, i2cReg, wordVal)](./lgpio.i2cwriteworddata.md) | This writes a single 16-bit word to the specified register of the device. |
-|  [i2cZip(handle, txBuf, rxBuf)](./lgpio.i2czip.md) | This function executes a sequence of I2C operations. The operations to be performed are specified by the contents of txBuf which contains the concatenated command codes and associated data. |
-|  [notifyClose(handle)](./lgpio.notifyclose.md) | This function stops notifications and frees the handle for reuse. |
-|  [notifyOpen()](./lgpio.notifyopen.md) | This function requests a free notification. |
-|  [notifyPause(handle)](./lgpio.notifypause.md) | This function pauses notifications. |
-|  [notifyResume(handle)](./lgpio.notifyresume.md) | This function restarts notifications on a paused notification. |
-|  [serialClose(handle)](./lgpio.serialclose.md) | This function closes the serial device. |
-|  [serialDataAvailable(handle)](./lgpio.serialdataavailable.md) | This function returns the count of bytes available to be read from the device. |
-|  [serialOpen(serDev, serBaud, serFlags)](./lgpio.serialopen.md) | This function opens a serial device at a specified baud rate and with specified flags. |
-|  [serialRead(handle, rxBuf)](./lgpio.serialread.md) | This function reads up to <code>rxBuf.length</code> bytes from the serial device. |
-|  [serialReadByte(handle)](./lgpio.serialreadbyte.md) | This function reads a byte from the serial device. |
-|  [serialWrite(handle, txBuf)](./lgpio.serialwrite.md) | This function writes <code>txBuf</code> to the serial device. |
-|  [serialWriteByte(handle, byteVal)](./lgpio.serialwritebyte.md) | This function writes a byte to the serial device. |
-|  [setInternal(cfgId, value)](./lgpio.setinternal.md) | Set an internal configuration value. |
-|  [setWorkDir(dirPath)](./lgpio.setworkdir.md) | Sets the library working directory. |
-|  [spiClose(handle)](./lgpio.spiclose.md) | This closes the SPI device. |
-|  [spiOpen(spiDev, spiChan, spiBaud, spiFlags)](./lgpio.spiopen.md) | This function returns a handle for the SPI device on the channel. |
-|  [spiRead(handle, rxBuf)](./lgpio.spiread.md) | This function reads <code>count</code> bytes of data from the SPI device. |
-|  [spiWrite(handle, txBuf)](./lgpio.spiwrite.md) | This function writes <code>txBuf</code> to the SPI device. |
-|  [spiXfer(handle, txBuf, rxBuf)](./lgpio.spixfer.md) | This function transfers data from <code>txBuf</code> to the SPI device. Simultaneously <code>txBuf.length</code> bytes of data are read from the device and written to <code>rxBuf</code>. |
-|  [timestamp()](./lgpio.timestamp.md) | Returns the current timestamp. |
-|  [txBusy(handle, gpio, kind)](./lgpio.txbusy.md) | This returns true if transmissions of the specified kind are active on the GPIO or group. |
-|  [txPulse(handle, gpio, pulseOn, pulseOff, pulseOffset, pulseCycles)](./lgpio.txpulse.md) | This starts software timed pulses on an output GPIO. |
-|  [txPwm(handle, gpio, pwmFrequency, pwmDutyCycle, pwmOffset, pwmCycles)](./lgpio.txpwm.md) | This starts software timed PWM on an output GPIO. |
-|  [txRoom(handle, gpio, kind)](./lgpio.txroom.md) | This returns the number of entries available for queueing transmissions of the specified kind on the GPIO or group. |
-|  [txServo(handle, gpio, pulseWidth, servoFrequency, servoOffset, servoCycles)](./lgpio.txservo.md) | This starts software timed servo pulses on an output GPIO. |
-|  [txWave(handle, gpio, pulses)](./lgpio.txwave.md) | This starts a wave on an output group of GPIOs. |
-|  [version()](./lgpio.version.md) | Returns the lgpiolibrary version number. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[errorText(error)](./lgpio.errortext.md)
+
+
+</td><td>
+
+Returns the error text for an error code.
+
+
+</td></tr>
+<tr><td>
+
+[getInternal(cfgId)](./lgpio.getinternal.md)
+
+
+</td><td>
+
+Get an internal configuration value.
+
+
+</td></tr>
+<tr><td>
+
+[getWorkDir()](./lgpio.getworkdir.md)
+
+
+</td><td>
+
+Returns the library working directory.
+
+
+</td></tr>
+<tr><td>
+
+[gpiochipClose(handle)](./lgpio.gpiochipclose.md)
+
+
+</td><td>
+
+This closes an opened gpiochip device.
+
+
+</td></tr>
+<tr><td>
+
+[gpiochipOpen(gpioDev)](./lgpio.gpiochipopen.md)
+
+
+</td><td>
+
+This returns a handle to a gpiochip device.
+
+
+</td></tr>
+<tr><td>
+
+[gpioClaimAlert(handle, flags, edges, gpio, nfyHandle)](./lgpio.gpioclaimalert.md)
+
+
+</td><td>
+
+This claims a GPIO for alerts on level changes.
+
+
+</td></tr>
+<tr><td>
+
+[gpioClaimInput(handle, gpio, flags)](./lgpio.gpioclaiminput.md)
+
+
+</td><td>
+
+This claims a GPIO for input.
+
+
+</td></tr>
+<tr><td>
+
+[gpioClaimOutput(handle, gpio, flags, level)](./lgpio.gpioclaimoutput.md)
+
+
+</td><td>
+
+This claims a GPIO for output.
+
+
+</td></tr>
+<tr><td>
+
+[gpioFree(handle, gpio)](./lgpio.gpiofree.md)
+
+
+</td><td>
+
+This frees a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioGetChipInfo(handle)](./lgpio.gpiogetchipinfo.md)
+
+
+</td><td>
+
+This returns information about a gpiochip.
+
+
+</td></tr>
+<tr><td>
+
+[gpioGetLineInfo(handle, gpio)](./lgpio.gpiogetlineinfo.md)
+
+
+</td><td>
+
+Returns information about a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioGetMode(handle, gpio)](./lgpio.gpiogetmode.md)
+
+
+</td><td>
+
+Returns the GPIO mode.
+
+
+</td></tr>
+<tr><td>
+
+[gpioRead(handle, gpio)](./lgpio.gpioread.md)
+
+
+</td><td>
+
+This returns the level of a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioSetAlertsFunc(handle, gpio, callback)](./lgpio.gpiosetalertsfunc.md)
+
+
+</td><td>
+
+This sets up a callback to be called when an alert GPIO changes state.
+
+
+</td></tr>
+<tr><td>
+
+[gpioSetDebounce(handle, gpio, debounceUs)](./lgpio.gpiosetdebounce.md)
+
+
+</td><td>
+
+This sets the debounce time for a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioSetSamplesFunc(callback)](./lgpio.gpiosetsamplesfunc.md)
+
+
+</td><td>
+
+This sets up a callback to be called when any alert GPIO changes state.
+
+
+</td></tr>
+<tr><td>
+
+[gpioSetUser(handle, user)](./lgpio.gpiosetuser.md)
+
+
+</td><td>
+
+This sets the user string to be associated with each claimed GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioSetWatchdog(handle, gpio, watchdogUs)](./lgpio.gpiosetwatchdog.md)
+
+
+</td><td>
+
+This sets the watchdog time for a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[gpioWrite(handle, gpio, level)](./lgpio.gpiowrite.md)
+
+
+</td><td>
+
+This sets the level of an output GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[groupClaimInput(handle, gpios, flags)](./lgpio.groupclaiminput.md)
+
+
+</td><td>
+
+This claims a group of GPIO for inputs.
+
+
+</td></tr>
+<tr><td>
+
+[groupClaimOutput(handle, gpios, levels, flags)](./lgpio.groupclaimoutput.md)
+
+
+</td><td>
+
+This claims a group of GPIO for outputs.
+
+
+</td></tr>
+<tr><td>
+
+[groupFree(handle, gpio)](./lgpio.groupfree.md)
+
+
+</td><td>
+
+This frees all the GPIO associated with a group.
+
+
+</td></tr>
+<tr><td>
+
+[groupRead(handle, gpio)](./lgpio.groupread.md)
+
+
+</td><td>
+
+This returns the levels read from a group.
+
+
+</td></tr>
+<tr><td>
+
+[groupWrite(handle, gpio, levels, mask)](./lgpio.groupwrite.md)
+
+
+</td><td>
+
+This sets the levels of an output group.
+
+
+</td></tr>
+<tr><td>
+
+[i2cBlockProcessCall(handle, i2cReg, ioBuf, count)](./lgpio.i2cblockprocesscall.md)
+
+
+</td><td>
+
+This writes data bytes to the specified register of the device and reads a device specified number of bytes of data in return.
+
+
+</td></tr>
+<tr><td>
+
+[i2cClose(handle)](./lgpio.i2cclose.md)
+
+
+</td><td>
+
+This closes the I2C device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cOpen(i2cDev, i2cAddr, i2cFlags)](./lgpio.i2copen.md)
+
+
+</td><td>
+
+This returns a handle for the device at the address on the I2C bus.
+
+
+</td></tr>
+<tr><td>
+
+[i2cProcessCall(handle, i2cReg, wordVal)](./lgpio.i2cprocesscall.md)
+
+
+</td><td>
+
+This writes 16 bits of data to the specified register of the device and reads 16 bits of data in return.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadBlockData(handle, i2cReg, rxBuf)](./lgpio.i2creadblockdata.md)
+
+
+</td><td>
+
+This reads up to 32 bytes from the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadByte(handle)](./lgpio.i2creadbyte.md)
+
+
+</td><td>
+
+This reads a single byte from the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadByteData(handle, i2cReg)](./lgpio.i2creadbytedata.md)
+
+
+</td><td>
+
+This reads a single byte from the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadDevice(handle, rxBuf)](./lgpio.i2creaddevice.md)
+
+
+</td><td>
+
+This reads count bytes from the raw device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadI2CBlockData(handle, i2cReg, rxBuf)](./lgpio.i2creadi2cblockdata.md)
+
+
+</td><td>
+
+This reads `rxBuf.length` bytes from the specified register of the device. The count may be 1-32.
+
+
+</td></tr>
+<tr><td>
+
+[i2cReadWordData(handle, i2cReg)](./lgpio.i2creadworddata.md)
+
+
+</td><td>
+
+This reads a single 16-bit word from the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cSegments(handle, segs)](./lgpio.i2csegments.md)
+
+
+</td><td>
+
+This function executes multiple I2C segments in one transaction by calling the `I2C_RDWR` ioctl.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteBlockData(handle, i2cReg, data)](./lgpio.i2cwriteblockdata.md)
+
+
+</td><td>
+
+This writes up to 32 bytes to the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteByte(handle, byteVal)](./lgpio.i2cwritebyte.md)
+
+
+</td><td>
+
+This sends a single byte to the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteByteData(handle, i2cReg, byteVal)](./lgpio.i2cwritebytedata.md)
+
+
+</td><td>
+
+This writes a single byte to the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteDevice(handle, data)](./lgpio.i2cwritedevice.md)
+
+
+</td><td>
+
+This writes a buffer of bytes to the raw device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteI2CBlockData(handle, i2cReg, data)](./lgpio.i2cwritei2cblockdata.md)
+
+
+</td><td>
+
+This writes up to 32 bytes to the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteQuick(handle, bitVal)](./lgpio.i2cwritequick.md)
+
+
+</td><td>
+
+This sends a single bit (in the Rd/Wr bit) to the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cWriteWordData(handle, i2cReg, wordVal)](./lgpio.i2cwriteworddata.md)
+
+
+</td><td>
+
+This writes a single 16-bit word to the specified register of the device.
+
+
+</td></tr>
+<tr><td>
+
+[i2cZip(handle, txBuf, rxBuf)](./lgpio.i2czip.md)
+
+
+</td><td>
+
+This function executes a sequence of I2C operations. The operations to be performed are specified by the contents of txBuf which contains the concatenated command codes and associated data.
+
+
+</td></tr>
+<tr><td>
+
+[notifyClose(handle)](./lgpio.notifyclose.md)
+
+
+</td><td>
+
+This function stops notifications and frees the handle for reuse.
+
+
+</td></tr>
+<tr><td>
+
+[notifyOpen()](./lgpio.notifyopen.md)
+
+
+</td><td>
+
+This function requests a free notification.
+
+
+</td></tr>
+<tr><td>
+
+[notifyPause(handle)](./lgpio.notifypause.md)
+
+
+</td><td>
+
+This function pauses notifications.
+
+
+</td></tr>
+<tr><td>
+
+[notifyResume(handle)](./lgpio.notifyresume.md)
+
+
+</td><td>
+
+This function restarts notifications on a paused notification.
+
+
+</td></tr>
+<tr><td>
+
+[serialClose(handle)](./lgpio.serialclose.md)
+
+
+</td><td>
+
+This function closes the serial device.
+
+
+</td></tr>
+<tr><td>
+
+[serialDataAvailable(handle)](./lgpio.serialdataavailable.md)
+
+
+</td><td>
+
+This function returns the count of bytes available to be read from the device.
+
+
+</td></tr>
+<tr><td>
+
+[serialOpen(serDev, serBaud, serFlags)](./lgpio.serialopen.md)
+
+
+</td><td>
+
+This function opens a serial device at a specified baud rate and with specified flags.
+
+
+</td></tr>
+<tr><td>
+
+[serialRead(handle, rxBuf)](./lgpio.serialread.md)
+
+
+</td><td>
+
+This function reads up to `rxBuf.length` bytes from the serial device.
+
+
+</td></tr>
+<tr><td>
+
+[serialReadByte(handle)](./lgpio.serialreadbyte.md)
+
+
+</td><td>
+
+This function reads a byte from the serial device.
+
+
+</td></tr>
+<tr><td>
+
+[serialWrite(handle, txBuf)](./lgpio.serialwrite.md)
+
+
+</td><td>
+
+This function writes `txBuf` to the serial device.
+
+
+</td></tr>
+<tr><td>
+
+[serialWriteByte(handle, byteVal)](./lgpio.serialwritebyte.md)
+
+
+</td><td>
+
+This function writes a byte to the serial device.
+
+
+</td></tr>
+<tr><td>
+
+[setInternal(cfgId, value)](./lgpio.setinternal.md)
+
+
+</td><td>
+
+Set an internal configuration value.
+
+
+</td></tr>
+<tr><td>
+
+[setWorkDir(dirPath)](./lgpio.setworkdir.md)
+
+
+</td><td>
+
+Sets the library working directory.
+
+
+</td></tr>
+<tr><td>
+
+[spiClose(handle)](./lgpio.spiclose.md)
+
+
+</td><td>
+
+This closes the SPI device.
+
+
+</td></tr>
+<tr><td>
+
+[spiOpen(spiDev, spiChan, spiBaud, spiFlags)](./lgpio.spiopen.md)
+
+
+</td><td>
+
+This function returns a handle for the SPI device on the channel.
+
+
+</td></tr>
+<tr><td>
+
+[spiRead(handle, rxBuf)](./lgpio.spiread.md)
+
+
+</td><td>
+
+This function reads `count` bytes of data from the SPI device.
+
+
+</td></tr>
+<tr><td>
+
+[spiWrite(handle, txBuf)](./lgpio.spiwrite.md)
+
+
+</td><td>
+
+This function writes `txBuf` to the SPI device.
+
+
+</td></tr>
+<tr><td>
+
+[spiXfer(handle, txBuf, rxBuf)](./lgpio.spixfer.md)
+
+
+</td><td>
+
+This function transfers data from `txBuf` to the SPI device. Simultaneously `txBuf.length` bytes of data are read from the device and written to `rxBuf`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[timestamp()](./lgpio.timestamp.md)
+
+
+</td><td>
+
+Returns the current timestamp.
+
+
+</td></tr>
+<tr><td>
+
+[txBusy(handle, gpio, kind)](./lgpio.txbusy.md)
+
+
+</td><td>
+
+This returns true if transmissions of the specified kind are active on the GPIO or group.
+
+
+</td></tr>
+<tr><td>
+
+[txPulse(handle, gpio, pulseOn, pulseOff, pulseOffset, pulseCycles)](./lgpio.txpulse.md)
+
+
+</td><td>
+
+This starts software timed pulses on an output GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[txPwm(handle, gpio, pwmFrequency, pwmDutyCycle, pwmOffset, pwmCycles)](./lgpio.txpwm.md)
+
+
+</td><td>
+
+This starts software timed PWM on an output GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[txRoom(handle, gpio, kind)](./lgpio.txroom.md)
+
+
+</td><td>
+
+This returns the number of entries available for queueing transmissions of the specified kind on the GPIO or group.
+
+
+</td></tr>
+<tr><td>
+
+[txServo(handle, gpio, pulseWidth, servoFrequency, servoOffset, servoCycles)](./lgpio.txservo.md)
+
+
+</td><td>
+
+This starts software timed servo pulses on an output GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[txWave(handle, gpio, pulses)](./lgpio.txwave.md)
+
+
+</td><td>
+
+This starts a wave on an output group of GPIOs.
+
+
+</td></tr>
+<tr><td>
+
+[version()](./lgpio.version.md)
+
+
+</td><td>
+
+Returns the lgpiolibrary version number.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [GpioAlert](./lgpio.gpioalert.md) | An object representing a GPIO alert. |
-|  [GpioChipInfo](./lgpio.gpiochipinfo.md) | Information about the GPIO chip. |
-|  [GpioLineInfo](./lgpio.gpiolineinfo.md) | Information about a GPIO. |
-|  [GpioReport](./lgpio.gpioreport.md) | An object representing the details of a GPIO alert. |
-|  [I2cMsg](./lgpio.i2cmsg.md) | An I2C message object. |
-|  [TxWavePulse](./lgpio.txwavepulse.md) | An object representing a pulse in a wave sequence. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GpioAlert](./lgpio.gpioalert.md)
+
+
+</td><td>
+
+An object representing a GPIO alert.
+
+
+</td></tr>
+<tr><td>
+
+[GpioChipInfo](./lgpio.gpiochipinfo.md)
+
+
+</td><td>
+
+Information about the GPIO chip.
+
+
+</td></tr>
+<tr><td>
+
+[GpioLineInfo](./lgpio.gpiolineinfo.md)
+
+
+</td><td>
+
+Information about a GPIO.
+
+
+</td></tr>
+<tr><td>
+
+[GpioReport](./lgpio.gpioreport.md)
+
+
+</td><td>
+
+An object representing the details of a GPIO alert.
+
+
+</td></tr>
+<tr><td>
+
+[I2cMsg](./lgpio.i2cmsg.md)
+
+
+</td><td>
+
+An I2C message object.
+
+
+</td></tr>
+<tr><td>
+
+[TxWavePulse](./lgpio.txwavepulse.md)
+
+
+</td><td>
+
+An object representing a pulse in a wave sequence.
+
+
+</td></tr>
+</tbody></table>
 

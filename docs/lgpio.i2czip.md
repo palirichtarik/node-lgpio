@@ -6,7 +6,7 @@
 
 This function executes a sequence of I2C operations. The operations to be performed are specified by the contents of txBuf which contains the concatenated command codes and associated data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cZip(handle: number, txBuf: Uint8Array, rxBuf: Uint8Array): number;
@@ -14,13 +14,73 @@ export declare function i2cZip(handle: number, txBuf: Uint8Array, rxBuf: Uint8Ar
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  txBuf | Uint8Array | The buffer containing the concatenated I2C commands |
-|  rxBuf | Uint8Array | The buffer to receive the data read from the device |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+txBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The buffer containing the concatenated I2C commands
+
+
+</td></tr>
+<tr><td>
+
+rxBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The buffer to receive the data read from the device
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

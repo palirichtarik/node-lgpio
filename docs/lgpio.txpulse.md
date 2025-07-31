@@ -6,7 +6,7 @@
 
 This starts software timed pulses on an output GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function txPulse(handle: number, gpio: number, pulseOn: number, pulseOff: number, pulseOffset?: number, pulseCycles?: number): number;
@@ -14,16 +14,121 @@ export declare function txPulse(handle: number, gpio: number, pulseOn: number, p
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  pulseOn | number | Pulse high time in microseconds |
-|  pulseOff | number | Pulse low time in microseconds |
-|  pulseOffset | number | <i>(Optional)</i> Offset from nominal pulse start position |
-|  pulseCycles | number | <i>(Optional)</i> The number of pulses to send, 0 or unspecified for infinite |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+pulseOn
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Pulse high time in microseconds
+
+
+</td></tr>
+<tr><td>
+
+pulseOff
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Pulse low time in microseconds
+
+
+</td></tr>
+<tr><td>
+
+pulseOffset
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Offset from nominal pulse start position
+
+
+</td></tr>
+<tr><td>
+
+pulseCycles
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The number of pulses to send, 0 or unspecified for infinite
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

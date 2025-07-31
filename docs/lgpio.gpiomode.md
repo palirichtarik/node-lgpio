@@ -6,7 +6,7 @@
 
 Bitmask representing the GPIO mode.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum GpioMode 
@@ -14,24 +14,247 @@ export declare enum GpioMode
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  KERNEL\_IN\_USE | <code>1</code> |  |
-|  KERNEL\_OUTPUT | <code>2</code> |  |
-|  KERNEL\_ACTIVE\_LOW | <code>4</code> |  |
-|  KERNEL\_OPEN\_DRAIN | <code>8</code> |  |
-|  KERNEL\_OPEN\_SOURCE | <code>16</code> |  |
-|  KERNEL\_UNUSED\_1 | <code>32</code> |  |
-|  KERNEL\_UNUSED\_2 | <code>64</code> |  |
-|  KERNEL\_UNUSED\_3 | <code>128</code> |  |
-|  INPUT | <code>256</code> |  |
-|  OUTPUT | <code>512</code> |  |
-|  ALERT | <code>1024</code> |  |
-|  GROUP | <code>2048</code> |  |
-|  UNUSED\_1 | <code>4096</code> |  |
-|  UNUSED\_2 | <code>8192</code> |  |
-|  UNUSED\_3 | <code>16384</code> |  |
-|  UNUSED\_4 | <code>32768</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+KERNEL\_IN\_USE
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_OUTPUT
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_ACTIVE\_LOW
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_OPEN\_DRAIN
+
+
+</td><td>
+
+`8`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_OPEN\_SOURCE
+
+
+</td><td>
+
+`16`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_UNUSED\_1
+
+
+</td><td>
+
+`32`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_UNUSED\_2
+
+
+</td><td>
+
+`64`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+KERNEL\_UNUSED\_3
+
+
+</td><td>
+
+`128`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+INPUT
+
+
+</td><td>
+
+`256`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+OUTPUT
+
+
+</td><td>
+
+`512`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+ALERT
+
+
+</td><td>
+
+`1024`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+GROUP
+
+
+</td><td>
+
+`2048`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+UNUSED\_1
+
+
+</td><td>
+
+`4096`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+UNUSED\_2
+
+
+</td><td>
+
+`8192`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+UNUSED\_3
+
+
+</td><td>
+
+`16384`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+UNUSED\_4
+
+
+</td><td>
+
+`32768`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

@@ -6,7 +6,7 @@
 
 This sets up a callback to be called when any alert GPIO changes state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioSetSamplesFunc(callback: (alerts: GpioAlert[]) => void): void;
@@ -14,11 +14,41 @@ export declare function gpioSetSamplesFunc(callback: (alerts: GpioAlert[]) => vo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  callback | (alerts: [GpioAlert](./lgpio.gpioalert.md)<!-- -->\[\]) =&gt; void | The callback function |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+callback
+
+
+</td><td>
+
+(alerts: [GpioAlert](./lgpio.gpioalert.md)<!-- -->\[\]) =&gt; void
+
+
+</td><td>
+
+The callback function
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

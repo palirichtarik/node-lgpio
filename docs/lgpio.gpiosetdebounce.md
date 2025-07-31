@@ -6,7 +6,7 @@
 
 This sets the debounce time for a GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioSetDebounce(handle: number, gpio: number, debounceUs: number): void;
@@ -14,13 +14,73 @@ export declare function gpioSetDebounce(handle: number, gpio: number, debounceUs
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  debounceUs | number | The debounce time in microseconds |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+debounceUs
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The debounce time in microseconds
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

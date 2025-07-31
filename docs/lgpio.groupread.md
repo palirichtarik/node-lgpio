@@ -6,7 +6,7 @@
 
 This returns the levels read from a group.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function groupRead(handle: number, gpio: number): bigint;
@@ -14,12 +14,57 @@ export declare function groupRead(handle: number, gpio: number): bigint;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The group leader GPIO number |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The group leader GPIO number
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 bigint
 

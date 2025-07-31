@@ -6,7 +6,7 @@
 
 This starts software timed PWM on an output GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function txPwm(handle: number, gpio: number, pwmFrequency: number, pwmDutyCycle: number, pwmOffset?: number, pwmCycles?: number): number;
@@ -14,16 +14,121 @@ export declare function txPwm(handle: number, gpio: number, pwmFrequency: number
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  pwmFrequency | number | The PWM frequency in Hz (0=off, 0.1-10000) |
-|  pwmDutyCycle | number | The PWM duty cycle in % (0-100) |
-|  pwmOffset | number | <i>(Optional)</i> Offset from nominal pulse start position |
-|  pwmCycles | number | <i>(Optional)</i> The number of pulses to send, 0 or unspecified for infinite |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+pwmFrequency
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The PWM frequency in Hz (0=off, 0.1-10000)
+
+
+</td></tr>
+<tr><td>
+
+pwmDutyCycle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The PWM duty cycle in % (0-100)
+
+
+</td></tr>
+<tr><td>
+
+pwmOffset
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Offset from nominal pulse start position
+
+
+</td></tr>
+<tr><td>
+
+pwmCycles
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The number of pulses to send, 0 or unspecified for infinite
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

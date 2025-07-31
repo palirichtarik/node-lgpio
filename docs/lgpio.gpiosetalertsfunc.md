@@ -6,7 +6,7 @@
 
 This sets up a callback to be called when an alert GPIO changes state.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioSetAlertsFunc(handle: number, gpio: number, callback: (alerts: GpioAlert[]) => void): void;
@@ -14,13 +14,73 @@ export declare function gpioSetAlertsFunc(handle: number, gpio: number, callback
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  callback | (alerts: [GpioAlert](./lgpio.gpioalert.md)<!-- -->\[\]) =&gt; void | The callback function |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+callback
+
+
+</td><td>
+
+(alerts: [GpioAlert](./lgpio.gpioalert.md)<!-- -->\[\]) =&gt; void
+
+
+</td><td>
+
+The callback function
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

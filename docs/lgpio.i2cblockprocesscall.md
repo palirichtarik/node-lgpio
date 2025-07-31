@@ -6,7 +6,7 @@
 
 This writes data bytes to the specified register of the device and reads a device specified number of bytes of data in return.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cBlockProcessCall(handle: number, i2cReg: number, ioBuf: Uint8Array, count: number): number;
@@ -14,14 +14,89 @@ export declare function i2cBlockProcessCall(handle: number, i2cReg: number, ioBu
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  i2cReg | number | 0-0xFF, the register to read |
-|  ioBuf | Uint8Array | The IO buffer |
-|  count | number | The number of bytes to write from the IO buffer |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+i2cReg
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the register to read
+
+
+</td></tr>
+<tr><td>
+
+ioBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The IO buffer
+
+
+</td></tr>
+<tr><td>
+
+count
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number of bytes to write from the IO buffer
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

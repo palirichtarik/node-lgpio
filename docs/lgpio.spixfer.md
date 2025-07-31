@@ -6,7 +6,7 @@
 
 This function transfers data from `txBuf` to the SPI device. Simultaneously `txBuf.length` bytes of data are read from the device and written to `rxBuf`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function spiXfer(handle: number, txBuf: Uint8Array, rxBuf: Uint8Array): number;
@@ -14,13 +14,73 @@ export declare function spiXfer(handle: number, txBuf: Uint8Array, rxBuf: Uint8A
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The SPI device handle as returned by [spiOpen()](./lgpio.spiopen.md) |
-|  txBuf | Uint8Array | The data to write to the device |
-|  rxBuf | Uint8Array | The buffer to receive data from the device |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The SPI device handle as returned by [spiOpen()](./lgpio.spiopen.md)
+
+
+</td></tr>
+<tr><td>
+
+txBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The data to write to the device
+
+
+</td></tr>
+<tr><td>
+
+rxBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The buffer to receive data from the device
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

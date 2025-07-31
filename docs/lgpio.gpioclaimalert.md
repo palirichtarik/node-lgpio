@@ -6,7 +6,7 @@
 
 This claims a GPIO for alerts on level changes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioClaimAlert(handle: number, flags: GpioFlag, edges: GpioEdge, gpio: number, nfyHandle?: number): void;
@@ -14,15 +14,105 @@ export declare function gpioClaimAlert(handle: number, flags: GpioFlag, edges: G
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  flags | [GpioFlag](./lgpio.gpioflag.md) | Bitmask of the available [GPIO flags](./lgpio.gpioflag.md) |
-|  edges | [GpioEdge](./lgpio.gpioedge.md) | Bitmask of the [edge flags](./lgpio.gpioedge.md) on which an alert should trigger |
-|  gpio | number | The GPIO number |
-|  nfyHandle | number | <i>(Optional)</i> A notification channel handle as returned by [notifyOpen()](./lgpio.notifyopen.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+flags
+
+
+</td><td>
+
+[GpioFlag](./lgpio.gpioflag.md)
+
+
+</td><td>
+
+Bitmask of the available [GPIO flags](./lgpio.gpioflag.md)
+
+
+</td></tr>
+<tr><td>
+
+edges
+
+
+</td><td>
+
+[GpioEdge](./lgpio.gpioedge.md)
+
+
+</td><td>
+
+Bitmask of the [edge flags](./lgpio.gpioedge.md) on which an alert should trigger
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+nfyHandle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ A notification channel handle as returned by [notifyOpen()](./lgpio.notifyopen.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

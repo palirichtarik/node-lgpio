@@ -6,12 +6,12 @@
 
 Returns the current timestamp.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function timestamp(): bigint;
 ```
-<b>Returns:</b>
+**Returns:**
 
 bigint
 

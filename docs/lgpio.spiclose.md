@@ -6,7 +6,7 @@
 
 This closes the SPI device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function spiClose(handle: number): void;
@@ -14,11 +14,41 @@ export declare function spiClose(handle: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The SPI device handle as returned by [spiOpen()](./lgpio.spiopen.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The SPI device handle as returned by [spiOpen()](./lgpio.spiopen.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

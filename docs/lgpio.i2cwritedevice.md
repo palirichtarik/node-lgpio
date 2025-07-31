@@ -6,7 +6,7 @@
 
 This writes a buffer of bytes to the raw device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cWriteDevice(handle: number, data: Uint8Array): void;
@@ -14,12 +14,57 @@ export declare function i2cWriteDevice(handle: number, data: Uint8Array): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  data | Uint8Array | The buffer containing the data to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+data
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The buffer containing the data to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

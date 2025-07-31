@@ -6,10 +6,10 @@
 
 An I2C message object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare type I2cMsg = {
+export type I2cMsg = {
     addr: number;
     flags: number;
     buf: Uint8Array;

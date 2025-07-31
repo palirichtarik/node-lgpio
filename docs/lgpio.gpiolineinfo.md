@@ -6,7 +6,7 @@
 
 Information about a GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare type GpioLineInfo = {
@@ -15,7 +15,7 @@ export declare type GpioLineInfo = {
     user: string;
 };
 ```
-<b>References:</b> [GpioLineMode](./lgpio.gpiolinemode.md)
+**References:** [GpioLineMode](./lgpio.gpiolinemode.md)
 
 ## Remarks
 

@@ -6,7 +6,7 @@
 
 This sets the levels of an output group.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function groupWrite(handle: number, gpio: number, levels: bigint, mask?: bigint): void;
@@ -14,14 +14,89 @@ export declare function groupWrite(handle: number, gpio: number, levels: bigint,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The group leader GPIO number |
-|  levels | bigint | The levels to set |
-|  mask | bigint | <i>(Optional)</i> Bitmask indicating the members of the group whose level should be updated |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The group leader GPIO number
+
+
+</td></tr>
+<tr><td>
+
+levels
+
+
+</td><td>
+
+bigint
+
+
+</td><td>
+
+The levels to set
+
+
+</td></tr>
+<tr><td>
+
+mask
+
+
+</td><td>
+
+bigint
+
+
+</td><td>
+
+_(Optional)_ Bitmask indicating the members of the group whose level should be updated
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

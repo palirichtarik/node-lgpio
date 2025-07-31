@@ -6,7 +6,7 @@
 
 This reads up to 32 bytes from the specified register of the device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cReadBlockData(handle: number, i2cReg: number, rxBuf: Uint8Array): number;
@@ -14,13 +14,73 @@ export declare function i2cReadBlockData(handle: number, i2cReg: number, rxBuf: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  i2cReg | number | 0-0xFF, the register to read |
-|  rxBuf | Uint8Array | The buffer to receive the data read from the device |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+i2cReg
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the register to read
+
+
+</td></tr>
+<tr><td>
+
+rxBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The buffer to receive the data read from the device
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

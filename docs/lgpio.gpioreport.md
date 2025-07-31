@@ -6,10 +6,10 @@
 
 An object representing the details of a GPIO alert.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare type GpioReport = {
+export type GpioReport = {
     timestamp: bigint;
     chip: number;
     gpio: number;
@@ -17,7 +17,7 @@ export declare type GpioReport = {
     flags: number;
 };
 ```
-<b>References:</b> [GpioLevel](./lgpio.gpiolevel.md)
+**References:** [GpioLevel](./lgpio.gpiolevel.md)
 
 ## Remarks
 

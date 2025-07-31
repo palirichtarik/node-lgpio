@@ -6,7 +6,7 @@
 
 This function pauses notifications.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function notifyPause(handle: number): void;
@@ -14,11 +14,41 @@ export declare function notifyPause(handle: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The notification handle as returned by [notifyOpen()](./lgpio.notifyopen.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The notification handle as returned by [notifyOpen()](./lgpio.notifyopen.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

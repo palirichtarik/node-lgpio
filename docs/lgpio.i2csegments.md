@@ -6,7 +6,7 @@
 
 This function executes multiple I2C segments in one transaction by calling the `I2C_RDWR` ioctl.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cSegments(handle: number, segs: I2cMsg[]): number;
@@ -14,12 +14,57 @@ export declare function i2cSegments(handle: number, segs: I2cMsg[]): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  segs | [I2cMsg](./lgpio.i2cmsg.md)<!-- -->\[\] | The I2C segments to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+segs
+
+
+</td><td>
+
+[I2cMsg](./lgpio.i2cmsg.md)<!-- -->\[\]
+
+
+</td><td>
+
+The I2C segments to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

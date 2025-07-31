@@ -6,7 +6,7 @@
 
 This claims a GPIO for output.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioClaimOutput(handle: number, gpio: number, flags?: GpioFlag, level?: boolean): void;
@@ -14,14 +14,89 @@ export declare function gpioClaimOutput(handle: number, gpio: number, flags?: Gp
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  flags | [GpioFlag](./lgpio.gpioflag.md) | <i>(Optional)</i> Bitmask of the available [GPIO flags](./lgpio.gpioflag.md) |
-|  level | boolean | <i>(Optional)</i> The initial output logical level |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+flags
+
+
+</td><td>
+
+[GpioFlag](./lgpio.gpioflag.md)
+
+
+</td><td>
+
+_(Optional)_ Bitmask of the available [GPIO flags](./lgpio.gpioflag.md)
+
+
+</td></tr>
+<tr><td>
+
+level
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ The initial output logical level
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

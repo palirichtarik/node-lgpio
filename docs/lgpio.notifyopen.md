@@ -6,12 +6,12 @@
 
 This function requests a free notification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function notifyOpen(): number;
 ```
-<b>Returns:</b>
+**Returns:**
 
 number
 

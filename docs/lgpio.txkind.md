@@ -6,7 +6,7 @@
 
 Transmission queue kind.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum TxKind 
@@ -14,10 +14,51 @@ export declare enum TxKind
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  PWM | <code>0</code> |  |
-|  WAVE | <code>1</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+PWM
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+WAVE
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

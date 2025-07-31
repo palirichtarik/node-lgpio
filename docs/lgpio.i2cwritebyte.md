@@ -6,7 +6,7 @@
 
 This sends a single byte to the device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cWriteByte(handle: number, byteVal: number): void;
@@ -14,12 +14,57 @@ export declare function i2cWriteByte(handle: number, byteVal: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  byteVal | number | 0-0xFF, the value to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+byteVal
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the value to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

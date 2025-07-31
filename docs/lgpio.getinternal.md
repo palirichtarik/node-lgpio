@@ -6,7 +6,7 @@
 
 Get an internal configuration value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getInternal(cfgId: CfgId): bigint;
@@ -14,11 +14,41 @@ export declare function getInternal(cfgId: CfgId): bigint;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cfgId | [CfgId](./lgpio.cfgid.md) | The configuration item ID |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cfgId
+
+
+</td><td>
+
+[CfgId](./lgpio.cfgid.md)
+
+
+</td><td>
+
+The configuration item ID
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 bigint
 

@@ -6,7 +6,7 @@
 
 This function opens a serial device at a specified baud rate and with specified flags.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function serialOpen(serDev: string, serBaud: number, serFlags?: number): number;
@@ -14,13 +14,73 @@ export declare function serialOpen(serDev: string, serBaud: number, serFlags?: n
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  serDev | string | The serial device to open |
-|  serBaud | number | The baud rate in bits per second, see remarks |
-|  serFlags | number | <i>(Optional)</i> No flags are currently defined; this parameter should be omitted or set to zero |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+serDev
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The serial device to open
+
+
+</td></tr>
+<tr><td>
+
+serBaud
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The baud rate in bits per second, see remarks
+
+
+</td></tr>
+<tr><td>
+
+serFlags
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ No flags are currently defined; this parameter should be omitted or set to zero
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

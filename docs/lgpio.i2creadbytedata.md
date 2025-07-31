@@ -6,7 +6,7 @@
 
 This reads a single byte from the specified register of the device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cReadByteData(handle: number, i2cReg: number): number;
@@ -14,12 +14,57 @@ export declare function i2cReadByteData(handle: number, i2cReg: number): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  i2cReg | number | 0-0xFF, the register to read |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+i2cReg
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the register to read
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

@@ -6,7 +6,7 @@
 
 This claims a GPIO for input.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioClaimInput(handle: number, gpio: number, flags?: GpioFlag): void;
@@ -14,13 +14,73 @@ export declare function gpioClaimInput(handle: number, gpio: number, flags?: Gpi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  flags | [GpioFlag](./lgpio.gpioflag.md) | <i>(Optional)</i> Bitmask of the available [GPIO flags](./lgpio.gpioflag.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+flags
+
+
+</td><td>
+
+[GpioFlag](./lgpio.gpioflag.md)
+
+
+</td><td>
+
+_(Optional)_ Bitmask of the available [GPIO flags](./lgpio.gpioflag.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

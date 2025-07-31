@@ -6,7 +6,7 @@
 
 This returns a handle to a gpiochip device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpiochipOpen(gpioDev: number): number;
@@ -14,11 +14,41 @@ export declare function gpiochipOpen(gpioDev: number): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  gpioDev | number | The GPIO device number. |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+gpioDev
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device number.
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

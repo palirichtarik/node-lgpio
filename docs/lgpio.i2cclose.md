@@ -6,7 +6,7 @@
 
 This closes the I2C device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cClose(handle: number): void;
@@ -14,11 +14,41 @@ export declare function i2cClose(handle: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

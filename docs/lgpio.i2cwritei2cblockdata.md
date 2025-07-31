@@ -6,7 +6,7 @@
 
 This writes up to 32 bytes to the specified register of the device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function i2cWriteI2CBlockData(handle: number, i2cReg: number, data: Uint8Array): void;
@@ -14,13 +14,73 @@ export declare function i2cWriteI2CBlockData(handle: number, i2cReg: number, dat
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md) |
-|  i2cReg | number | 0-0xFF, the register to write |
-|  data | Uint8Array | The data to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The I2C device handle as returned by [i2cOpen()](./lgpio.i2copen.md)
+
+
+</td></tr>
+<tr><td>
+
+i2cReg
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the register to write
+
+
+</td></tr>
+<tr><td>
+
+data
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The data to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

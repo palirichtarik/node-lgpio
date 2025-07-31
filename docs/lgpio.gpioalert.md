@@ -6,15 +6,15 @@
 
 An object representing a GPIO alert.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare type GpioAlert = {
+export type GpioAlert = {
     report: GpioReport;
     nfyHandle: number;
 };
 ```
-<b>References:</b> [GpioReport](./lgpio.gpioreport.md)
+**References:** [GpioReport](./lgpio.gpioreport.md)
 
 ## Remarks
 

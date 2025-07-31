@@ -6,7 +6,7 @@
 
 Bitmask representing the GPIO line mode.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum GpioLineMode 
@@ -14,13 +14,93 @@ export declare enum GpioLineMode
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  KERNEL\_IN\_USE | <code>1</code> |  |
-|  OUTPUT | <code>2</code> |  |
-|  ACTIVE\_LOW | <code>4</code> |  |
-|  OPEN\_DRAIN | <code>8</code> |  |
-|  OPEN\_SOURCE | <code>16</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+KERNEL\_IN\_USE
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+OUTPUT
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+ACTIVE\_LOW
+
+
+</td><td>
+
+`4`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+OPEN\_DRAIN
+
+
+</td><td>
+
+`8`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+OPEN\_SOURCE
+
+
+</td><td>
+
+`16`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

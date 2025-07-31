@@ -6,7 +6,7 @@
 
 This function writes `txBuf` to the serial device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function serialWrite(handle: number, txBuf: Uint8Array): void;
@@ -14,12 +14,57 @@ export declare function serialWrite(handle: number, txBuf: Uint8Array): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md) |
-|  txBuf | Uint8Array | The array of bytes to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md)
+
+
+</td></tr>
+<tr><td>
+
+txBuf
+
+
+</td><td>
+
+Uint8Array
+
+
+</td><td>
+
+The array of bytes to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

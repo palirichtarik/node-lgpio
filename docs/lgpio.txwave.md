@@ -6,7 +6,7 @@
 
 This starts a wave on an output group of GPIOs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function txWave(handle: number, gpio: number, pulses: TxWavePulse[]): number;
@@ -14,13 +14,73 @@ export declare function txWave(handle: number, gpio: number, pulses: TxWavePulse
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The group leader GPIO number |
-|  pulses | [TxWavePulse](./lgpio.txwavepulse.md)<!-- -->\[\] | The pulses |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The group leader GPIO number
+
+
+</td></tr>
+<tr><td>
+
+pulses
+
+
+</td><td>
+
+[TxWavePulse](./lgpio.txwavepulse.md)<!-- -->\[\]
+
+
+</td><td>
+
+The pulses
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

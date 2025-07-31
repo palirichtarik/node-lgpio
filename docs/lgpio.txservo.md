@@ -6,7 +6,7 @@
 
 This starts software timed servo pulses on an output GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function txServo(handle: number, gpio: number, pulseWidth: number, servoFrequency: number, servoOffset?: number, servoCycles?: number): number;
@@ -14,16 +14,121 @@ export declare function txServo(handle: number, gpio: number, pulseWidth: number
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  pulseWidth | number | Pulse high time in microseconds (0=off, 500-2500) |
-|  servoFrequency | number | The number of pulses per second (40-500) |
-|  servoOffset | number | <i>(Optional)</i> Offset from nominal pulse start position |
-|  servoCycles | number | <i>(Optional)</i> The number of pulses to be sent, 0 or unspecified for infinite |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+pulseWidth
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Pulse high time in microseconds (0=off, 500-2500)
+
+
+</td></tr>
+<tr><td>
+
+servoFrequency
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number of pulses per second (40-500)
+
+
+</td></tr>
+<tr><td>
+
+servoOffset
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Offset from nominal pulse start position
+
+
+</td></tr>
+<tr><td>
+
+servoCycles
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The number of pulses to be sent, 0 or unspecified for infinite
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

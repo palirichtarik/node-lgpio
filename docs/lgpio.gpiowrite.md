@@ -6,7 +6,7 @@
 
 This sets the level of an output GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioWrite(handle: number, gpio: number, level: boolean): void;
@@ -14,13 +14,73 @@ export declare function gpioWrite(handle: number, gpio: number, level: boolean):
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
-|  level | boolean | The logical level to set |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+<tr><td>
+
+level
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+The logical level to set
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

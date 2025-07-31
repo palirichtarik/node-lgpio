@@ -6,7 +6,7 @@
 
 Returns information about a GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioGetLineInfo(handle: number, gpio: number): GpioLineInfo;
@@ -14,12 +14,57 @@ export declare function gpioGetLineInfo(handle: number, gpio: number): GpioLineI
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The GPIO number |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO number
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 [GpioLineInfo](./lgpio.gpiolineinfo.md)
 

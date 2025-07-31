@@ -6,12 +6,12 @@
 
 Returns the library working directory.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getWorkDir(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

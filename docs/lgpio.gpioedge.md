@@ -6,7 +6,7 @@
 
 Bitmask representing the edge on which an alert should trigger.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum GpioEdge 
@@ -14,11 +14,65 @@ export declare enum GpioEdge
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  RISING | <code>1</code> |  |
-|  FALLING | <code>2</code> |  |
-|  BOTH | <code>3</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+RISING
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+FALLING
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+BOTH
+
+
+</td><td>
+
+`3`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

@@ -6,7 +6,7 @@
 
 This function writes a byte to the serial device.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function serialWriteByte(handle: number, byteVal: number): void;
@@ -14,12 +14,57 @@ export declare function serialWriteByte(handle: number, byteVal: number): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md) |
-|  byteVal | number | 0-0xFF, the value to write |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The serial device handle as returned by [serialOpen()](./lgpio.serialopen.md)
+
+
+</td></tr>
+<tr><td>
+
+byteVal
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+0-0xFF, the value to write
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

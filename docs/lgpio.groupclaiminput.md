@@ -6,7 +6,7 @@
 
 This claims a group of GPIO for inputs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function groupClaimInput(handle: number, gpios: number[], flags?: GpioFlag): void;
@@ -14,13 +14,73 @@ export declare function groupClaimInput(handle: number, gpios: number[], flags?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpios | number\[\] | An array of one or more GPIO; the first GPIO is called the group leader and is used to reference the group as a whole |
-|  flags | [GpioFlag](./lgpio.gpioflag.md) | <i>(Optional)</i> Bitmask of the available [GPIO flags](./lgpio.gpioflag.md) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpios
+
+
+</td><td>
+
+number\[\]
+
+
+</td><td>
+
+An array of one or more GPIO; the first GPIO is called the group leader and is used to reference the group as a whole
+
+
+</td></tr>
+<tr><td>
+
+flags
+
+
+</td><td>
+
+[GpioFlag](./lgpio.gpioflag.md)
+
+
+</td><td>
+
+_(Optional)_ Bitmask of the available [GPIO flags](./lgpio.gpioflag.md)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

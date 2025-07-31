@@ -6,7 +6,7 @@
 
 Returns the error text for an error code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function errorText(error: number): string;
@@ -14,11 +14,41 @@ export declare function errorText(error: number): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  error | number | The error code |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+error
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The error code
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 string
 

@@ -6,10 +6,10 @@
 
 Information about the GPIO chip.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
-export declare type GpioChipInfo = {
+export type GpioChipInfo = {
     lines: number;
     name: string;
     label: string;

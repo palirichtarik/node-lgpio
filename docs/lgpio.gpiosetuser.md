@@ -6,7 +6,7 @@
 
 This sets the user string to be associated with each claimed GPIO.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function gpioSetUser(handle: number, user: string): void;
@@ -14,12 +14,57 @@ export declare function gpioSetUser(handle: number, user: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  user | string | The user name (up to 32 characters) |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+user
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The user name (up to 32 characters)
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 void
 

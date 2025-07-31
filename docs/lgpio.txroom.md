@@ -6,7 +6,7 @@
 
 This returns the number of entries available for queueing transmissions of the specified kind on the GPIO or group.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function txRoom(handle: number, gpio: number, kind: TxKind): number;
@@ -14,13 +14,73 @@ export declare function txRoom(handle: number, gpio: number, kind: TxKind): numb
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | number | The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md) |
-|  gpio | number | The number of the GPIO or group leader to check |
-|  kind | [TxKind](./lgpio.txkind.md) | The queue type to check |
+<table><thead><tr><th>
 
-<b>Returns:</b>
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The GPIO device handle as returned by [gpiochipOpen()](./lgpio.gpiochipopen.md)
+
+
+</td></tr>
+<tr><td>
+
+gpio
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+The number of the GPIO or group leader to check
+
+
+</td></tr>
+<tr><td>
+
+kind
+
+
+</td><td>
+
+[TxKind](./lgpio.txkind.md)
+
+
+</td><td>
+
+The queue type to check
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
 
 number
 

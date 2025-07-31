@@ -6,7 +6,7 @@
 
 The GPIO level at the time an alert was triggered.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum GpioLevel 
@@ -14,11 +14,65 @@ export declare enum GpioLevel
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  LOW | <code>0</code> |  |
-|  HIGH | <code>1</code> |  |
-|  WATCHDOG | <code>2</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+LOW
+
+
+</td><td>
+
+`0`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+HIGH
+
+
+</td><td>
+
+`1`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+WATCHDOG
+
+
+</td><td>
+
+`2`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Remarks
 

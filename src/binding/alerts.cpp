@@ -1,5 +1,6 @@
 #include <napi.h>
 #include <string>
+#include <vector>
 
 #include <lgpio.h>
 
@@ -7,6 +8,8 @@
 
 using namespace Napi;
 using namespace std;
+
+static vector<ThreadSafeFunction> g_tsfns;
 
 void gpioClaimAlert(const CallbackInfo& info) {
   Env env = info.Env();
@@ -77,30 +80,30 @@ void gpioSetAlertsFunc(const CallbackInfo& info) {
 
   int handle = (int) info[0].As<Number>();
   int gpio = (int) info[1].As<Number>();
-  ThreadSafeFunction cb = ThreadSafeFunction::New(
+  g_tsfns.push_back(ThreadSafeFunction::New(
     env,
     info[2].As<Function>(),
     "GPIO alert callback",
     0,
     1
-  );
+  ));
 
-  int result = lgGpioSetAlertsFunc(handle, gpio, callAlertsFunc, &cb);
+  int result = lgGpioSetAlertsFunc(handle, gpio, callAlertsFunc, &g_tsfns.back());
   throwIfError(env, "Failed setting alert callback", result);
 }
 
 void gpioSetSamplesFunc(const CallbackInfo& info) {
   Env env = info.Env();
 
-  ThreadSafeFunction cb = ThreadSafeFunction::New(
+  g_tsfns.push_back(ThreadSafeFunction::New(
     env,
     info[0].As<Function>(),
     "GPIO samples callback",
     0,
     1
-  );
+  ));
 
-  lgGpioSetSamplesFunc(callAlertsFunc, &cb);
+  lgGpioSetSamplesFunc(callAlertsFunc, &g_tsfns.back());
 }
 
 Number notifyOpen(const CallbackInfo& info) {
